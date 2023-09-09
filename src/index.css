@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@layer components {
+
+  .max-container {
+    /* max-width: 1440px; */
+    margin-left: 110px;
+    margin-right: 110px;
+  }
+
+  .container{
+    @apply mx-[110px] max-md:mx-3
+  }
+
+  .align-child{
+    align-content: space-between;
+  }
+}
